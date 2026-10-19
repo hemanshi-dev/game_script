@@ -1,0 +1,19 @@
+{
+  "name": "playrush-random-game-automation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright automation that opens and plays a random PlayRush game.",
+  "type": "module",
+  "scripts": {
+    "start": "node play-random-game.js",
+    "start:visible": "HEADLESS=false node play-random-game.js",
+    "test:cycle": "HEADLESS=true GAME_COUNT=1 node play-random-game.js"
+  },
+  "dependencies": {
+    "@sparticuz/chromium": "153.0.0",
+    "playwright-core": "1.64.1"
+  },
+  "engines": {
+    "node": "22.x"
+  }
+}
